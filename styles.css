@@ -1,0 +1,250 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Roboto, sans-serif;
+}
+
+/* Style the navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px); /* Add a blur effect */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 16%; /* Adjust padding for small screens */
+  transition: background 0.5s ease;
+  z-index: 1000;
+}
+
+/* Style the logo */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+  height: 30px; /* Adjust the height as needed */
+}
+
+/* Style the social links */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 18px;
+  color: #cccccc;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  background-image: linear-gradient(
+    to bottom left,
+    #800080,
+    #ff00ff,
+    #40e0d0
+  ); /* Gradient for background */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  color: transparent;
+  transform: scale(1.2); /* Add a hover effect to social icons */
+}
+
+/* Style the header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 140vh;
+  background-color: #000;
+  text-align: center;
+}
+
+/* Style the header content container */
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 68%; /* Full width on small screens */
+}
+
+.header-text {
+  text-align: justify;
+  width: 100%; /* Full width on small screens */
+  margin: 10px 0;
+}
+
+/* Style the subheading */
+.subheading {
+  font-size: 18px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Style the name */
+.name {
+  font-size: 54px; /* Adjust font size for smaller screens */
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: -10px;
+}
+
+.bio {
+  color: #cccccc;
+  font-size: 16px; /* Adjust font size for smaller screens */
+  font-weight: 500;
+}
+
+.header-image {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.header-image img {
+  margin-top: 20px;
+  width: 100%;
+  animation: floatUpDown 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Footer styles */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 5%; /* Adjust padding for small screens */
+  text-align: center;
+}
+
+/* Footer content container */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Additional links */
+.additional-links {
+  margin-top: 15px;
+}
+
+.additional-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.additional-links a:hover {
+    background-image: linear-gradient(
+    to bottom left,
+    #800080,
+    #ff00ff,
+    #40e0d0
+  ); /* Gradient for background */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+  color: transparent;
+}
+
+/* Copyright text */
+footer p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Media query for tablets and larger screens */
+@media screen and (min-width: 768px) {
+  /* Adjust styles for tablets and larger screens */
+  .navbar {
+    padding: 15px 16%; /* Adjust padding for larger screens */
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .header-content {
+    flex-direction: row; /* Side-by-side layout on tablets and larger screens */
+  }
+
+  .header-text {
+    width: 33%; /* Adjust the width as needed */
+    text-align: justify;
+  }
+
+  .subheading {
+    font-size: 24px;
+  }
+
+  .name {
+    font-size: 72px;
+  }
+
+  .bio {
+    font-size: 18px;
+  }
+
+  .header-image {
+    width: 66%;
+  }
+
+  .header-image img {
+    width: fit-content;
+    float: right;
+    height: 90vh;
+  }
+}
+
+/* Webkit-based browsers (Chrome, Safari) */
+/* These styles will affect the scrollbars in those browsers */
+
+/* Track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+  background: #ddd; /* Color of the scrollbar track on hover */
+}
+
+/* Track when scrollbar is active (clicked) */
+::-webkit-scrollbar-track:active {
+  background: #ccc; /* Color of the scrollbar track when clicked */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: transparent; /* Color of the scrollbar corner */
+}
