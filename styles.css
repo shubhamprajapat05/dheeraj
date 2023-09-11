@@ -179,8 +179,8 @@ footer p {
   }
 
   .header {
-    height: 100vh;
-    padding-top: 0vh;
+    /* height: 100vh; */
+    padding-top: 5vh;
   }
 
   .header-content {
@@ -211,7 +211,8 @@ footer p {
   .header-image img {
     width: fit-content;
     float: right;
-    height: 90vh;
+    width: 80%;
+    /* height: 90vh; */
   }
 }
 
