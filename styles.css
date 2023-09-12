@@ -89,7 +89,7 @@
 .subheading {
   color: #fff;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* Style the name */
@@ -97,7 +97,7 @@
   font-size: 36px; /* Adjust font size for smaller screens */
   color: #fff;
   margin-bottom: 5px;
-  font-weight: 800;
+  font-weight: 600;
   margin-top: -8px;
 }
 
