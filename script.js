@@ -33,7 +33,7 @@ const subheadingText = "Hello, It's me ";
 const nameElement = document.querySelector('.name');
 const nameText = "Dheeraj";
 const bioElement = document.querySelector('.bio');
-const bioText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto quisquam, corporis nobis ipsa iure fugit temporibus id esse? Suscipit voluptatum ea eos voluptate!";
+const bioText = "I'm a passionate freshman at Subodh College, Jaipur, currently pursuing a BCA degree. Embracing the spirit of curiosity, I seek out new experiences and connections, driven by the desire to make a meaningful impact through my future endeavors.";
 
 async function startTyping() {
     await typeText(subheadingElement, subheadingText, 50);
